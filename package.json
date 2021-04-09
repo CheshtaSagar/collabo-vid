@@ -1,0 +1,26 @@
+{
+  "name": "collabo-vid",
+  "version": "1.0.0",
+  "description": "Covid assistance",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheshtaSagar/collabo-vid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CheshtaSagar/collabo-vid/issues"
+  },
+  "homepage": "https://github.com/CheshtaSagar/collabo-vid#readme",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^3.5.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}
