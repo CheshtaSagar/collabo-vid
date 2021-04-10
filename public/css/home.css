@@ -1,0 +1,18 @@
+#chat-botCard{
+    padding: 20px;
+}
+#col1
+{
+    padding: 8px;
+    box-shadow: 0 5px 11px rgb(195, 126, 252);
+    border-radius: 50px;
+    align-items: center;
+    font-family: cursive;
+    align-content: center;
+    
+  }
+  #col1:hover{
+  transform: scale(1.1); 
+}
+
+/*for country stats*/

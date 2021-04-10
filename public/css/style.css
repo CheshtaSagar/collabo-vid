@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
-  background-image: url('2.jpg');
+  background-image: url('/images/2.jpg');
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.3;
@@ -491,4 +491,17 @@ ul li{
 
 #sihul li{
   cursor:pointer;
+}
+.feedback {
+ 
+  padding: 10px 20px;
+  border-radius: 50%;
+  
+  width: 100px;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 50px;
 }
