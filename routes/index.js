@@ -20,5 +20,14 @@
       res.render("countryStats", {info:response});
     });
   });
+
+  router.get("/IndiaStats", (req, res) => {
+    stats.countries({country:'India'}).then((response) => {
+      //console.log(response);
+      res.render("stats", {info:response});
+    });
+  });
+
+
   module.exports = router;
   

@@ -6,7 +6,7 @@ const stats = require('novelcovid');
 const axios = require('axios');
 
 
-
+stats.countries({country:'India'}).then(console.log) 
 
 // const Covid_India_api = 'https://api.covid19india.org/csv/latest/states.csv';
 // axios.get(Covid_India_api)
