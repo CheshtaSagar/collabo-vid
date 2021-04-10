@@ -34,6 +34,7 @@ app.use(express.static('public'));
 
 //setting routes
 app.use('/', require('./routes/index'));
+app.use('/news', require('./routes/news'));
 
 const server = app.listen(5000);
 console.log('server running at port 5000');
