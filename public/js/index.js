@@ -37,7 +37,7 @@ document.getElementById("MSG").value= no.innerHTML;
 $(window).load(function() {
   $messages.mCustomScrollbar();
   setTimeout(function() {
-    serverMessage("Hello!I am your personal assistance to solve your worries related to COVID-19..Ask your doubts;)");
+    serverMessage("Hello!I am your personal assistant to solve your worries related to COVID-19..Ask your doubts;)");
   }, 100);
 
 });
