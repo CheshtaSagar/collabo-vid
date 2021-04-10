@@ -6,7 +6,7 @@ const stats = require('novelcovid');
 const axios = require('axios');
 
 
-stats.countries({country:'India'}).then(console.log) 
+// stats.countries({country:'India'}).then(console.log) 
 
 
 app.set('views', path.join(__dirname, 'views'));
