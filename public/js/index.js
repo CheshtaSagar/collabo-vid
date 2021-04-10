@@ -64,9 +64,32 @@ function insertMessage() {
 
 }
 
+
+
+function insertMessage1() {
+  msg ='Symptom-Checker';
+  if ($.trim(msg) == '') {
+    return false;
+  }
+  $('<div class="message message-personal">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
+ 
+  fetchmsg1() 
+  
+  updateScrollbar();
+
+}
+
 document.getElementById("mymsg").onsubmit = (e)=>{
   e.preventDefault() 
   insertMessage();
+  
+ // speechSynthesis.speak( new SpeechSynthesisUtterance("hello"))
+}
+
+
+document.getElementById("mymsg1").onsubmit = (e)=>{
+  e.preventDefault() 
+  insertMessage1();
   
  // speechSynthesis.speak( new SpeechSynthesisUtterance("hello"))
 }
@@ -107,12 +130,35 @@ function fetchmsg(){
         }).then(res => res.json())
          .then(response => {
           console.log(response);
-        serverMessage(response.Reply);
-          speechSynthesis.speak( new SpeechSynthesisUtterance(response.Reply))
+          serverMessage(response.Reply);
+         // speechSynthesis.speak( new SpeechSynthesisUtterance(response.Reply))
         
           
          })
           .catch(error => console.error('Error h:', error));
+
+}
+
+
+function fetchmsg1(){
+
+  var url = 'http://localhost:5000/send-msg1';
+   
+   const data = new URLSearchParams();
+   
+   console.log("abc",data)
+     fetch(url, {
+       method: 'POST',
+       body:data
+     }).then(res => res.json())
+      .then(response => {
+       console.log(response);
+       serverMessage(response.Reply);
+      // speechSynthesis.speak( new SpeechSynthesisUtterance(response.Reply))
+     
+       
+      })
+       .catch(error => console.error('Error h:', error));
 
 }
 

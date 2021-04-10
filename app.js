@@ -8,16 +8,6 @@ const axios = require('axios');
 
 stats.countries({country:'India'}).then(console.log) 
 
-// const Covid_India_api = 'https://api.covid19india.org/csv/latest/states.csv';
-// axios.get(Covid_India_api)
-//     .then(response => console.log(response));
-
-//stats.countries()
-//.then((response) => console.log(response));
-
-//states data
-// stats.gov('india')
-// .then((response) => console.log(response));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -59,7 +49,14 @@ app.post('/send-msg',(req,res)=>
 
 });
 
+//for symptom checker button
+app.post('/send-msg1',(req,res)=>
+{
+   runSample('Symptom-Checker').then(data=>{
+      res.send({Reply : data})
+   });
 
+});
 
 
 ////////-------->
@@ -70,6 +67,8 @@ const { response } = require('express');
 
 // A unique identifier for the given session
 const sessionId = uuid.v4();
+
+
 
 /**
  * Send a query to the dialogflow agent, and return the query result.
