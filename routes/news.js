@@ -6,6 +6,7 @@ const NewsAPI = require("newsapi");
 const newsapi = new NewsAPI("{apiKey}");
 
 
+
 router.get("/", (req, res) => {
   newsapi.v2
     .everything({ q: "covid", sortBy: "relevancy", pageSize: 45 })
