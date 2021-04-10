@@ -1,29 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js News</title>
-    <link rel="stylesheet" href="/css2/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <div class="header__logo">Node.Js News</div>
-        <%- include('./partials/search.ejs') %>
-    </header>
 
-    <div class="wrapper">
-        <div class="news">
-            <% info.forEach(function(i){ %>
-                <a href="/article/<%- i.url %>" class="news__card">
-                    <img src="<%= i.urlToImage%>" alt="<%= i.title %>">
-                    <h2><%= i.title%></h2>
-                    <h6><%= i.description%></h6>
-                    <p><%= i.content %></p>
-                </a>
-            <% }); %>
+
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Stats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stats</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+</head>
+
+
+<body class="newsbody">
+    <%- include ('partials/navNews') %>
+
+        <div>
+            <h4 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Covid News
+            </h4>
         </div>
-    </div>  
+        </br>
+        <div class="wrapper">
+            <div class="news">
+                <% info.forEach(function(i){ %>
+                    <a href="<%=i.url %>" class="news__card">
+                        <img src="<%= i.urlToImage%>" class="newsImg" alt="<%= i.title %>">
+                        <h2 class="newsh2"><%= i.title%></h2>
+                        <h6><%= i.description%></h6>
+                        <p><%= i.content %></p>
+                    </a>
+                <% }); %>
+            </div>
+        </div> 
+
+     
+    
 </body>
-</html> 
+
+</html>
