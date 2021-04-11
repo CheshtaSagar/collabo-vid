@@ -53,6 +53,8 @@ Add your Dialogflow key inside a key folder to interact with chatbot.
   1) Node.JS
   2) Express
   3) Google Dialogflow
+  4) geo-plugins
+  5) News APIs
   
   
 
