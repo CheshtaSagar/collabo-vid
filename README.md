@@ -9,10 +9,10 @@
   A website that is built to extend help in the time of Covid-19, enabling users to interact with a smart chatbot, look for current Covid-19 cases around the globe and stay updated with latest news.
   
 ## Demo Video Link:
-  <a href="https://youtu.be/dQw4w9WgXcQ">https://youtu.be/dQw4w9WgXcQ</a>
+  <a href="https://drive.google.com/file/d/1i_tzn0hIEO-UkYXAbe2i4e1jekJwH3R6/view?usp=sharing">https://drive.google.com/file/d/1i_tzn0hIEO-UkYXAbe2i4e1jekJwH3R6/view?usp=sharing</a>
   
 ## Presentation Link:
-  <a href="https://docs.google.com/presentation/d/1NEbqpM6J6UkmHN_J6NsgOhKvDU6fkfnli4OIg1lh-pk/edit?usp=sharing"> ppt link here </a>
+  <a href="https://drive.google.com/file/d/1oq1wMlYDU-ycEBJIg-ZMC3OLWcu0s4th/view?usp=sharing"> ppt link here </a>
   
   
 ## Table of Contents:
@@ -58,7 +58,7 @@ Add your Dialogflow key inside a key folder to interact with chatbot.
 
 ## ✨Contributors:
 
-**Codaline**
+**Team Codaline**
 
 * [Cheshta Sagar](https://github.com/CheshtaSagar)
 * [Akanksha Verma](https://github.com/Akanksha3454Verma)
